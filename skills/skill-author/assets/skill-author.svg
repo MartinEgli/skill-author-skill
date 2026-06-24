@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Skill Author">
+  <rect width="128" height="128" rx="24" fill="#27272A"/>
+  <path d="M32 91 84 39l14 14-52 52-20 6 6-20Z" fill="#FDE68A"/>
+  <path d="M78 45 92 59" stroke="#92400E" stroke-width="7" stroke-linecap="round"/>
+  <rect x="30" y="24" width="46" height="14" rx="5" fill="#60A5FA"/>
+  <rect x="30" y="45" width="32" height="10" rx="4" fill="#34D399"/>
+  <path d="M28 105h73" stroke="#F8FAFC" stroke-width="7" stroke-linecap="round"/>
+</svg>
