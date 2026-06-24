@@ -1,3 +1,5 @@
 display_name: Skill Author
 short_description: Build and improve traceable skills for Codex and other agents.
+icon_small: ./assets/skill-author-small.svg
+icon_large: ./assets/skill-author.svg
 default_prompt: Use skill-author to create or refine a production-ready agent skill for Codex, Claude, Cursor, Windsurf, Cline, or another host with evidence, validation, Gitflow, AgentSkills catalog updates, and feedback into the authoring workflow.
