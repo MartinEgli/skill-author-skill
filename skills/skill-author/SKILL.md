@@ -6,7 +6,8 @@ description: >
   from single-skill-template, updating an existing skill contract, adding modes,
   roles, references, evidence and traceability rules, diagram capability,
   agents/openai.yaml metadata, validation, packaging, Gitflow branches,
-  submodules, README catalog entries, or installation guidance.
+  submodules, README catalog entries, installation guidance, or feedback loops
+  for improving the skill-author workflow after creating or refining skills.
 ---
 
 # Skill Author
@@ -28,6 +29,8 @@ Use this skill when the user asks to:
 - add a skill to AgentSkills as a submodule
 - update AgentSkills README, AGENTS, install examples, or skill catalog entries
 - define a repeatable recipe for building future skills
+- create a feedback route from a newly built skill back into skill-author
+  improvements
 
 ## Mandatory Rules
 
@@ -131,6 +134,12 @@ tags, pushes, and superrepo pointer updates. Read
 Design realistic validation prompts for the skill without leaking intended
 answers. Read `references/forward-testing.md`.
 
+### /skill-author feedback
+
+Capture lessons from creating or refining a skill and decide whether
+`skill-author`, `single-skill-template`, AgentSkills docs, or a target skill
+needs improvement. Read `references/feedback-route.md`.
+
 ## Evidence Handling
 
 Use `references/evidence-traceability.md` for every substantial skill change.
@@ -161,6 +170,7 @@ Generated or updated skills should include:
 - direct reference links only where needed
 - `agents/openai.yaml` aligned with `SKILL.md`
 - validation/test/package commands that pass
+- a feedback route when new work reveals a repeatable authoring gap
 
 ## Quality Gates
 
@@ -176,6 +186,7 @@ Before final answer or commit:
 - README/catalog/submodule docs are updated when needed
 - validation, tests, and packaging pass or failures are reported
 - commits are granular and on the expected branch
+- feedback items are classified as applied, deferred, rejected, or routed
 
 ## Handoffs
 
@@ -185,6 +196,8 @@ Before final answer or commit:
   evidence acceptance or governance review.
 - Use GitHub tooling when PRs, remote repos, releases, or review threads are
   explicitly part of the task.
+- Use `/skill-author feedback` after creating a new skill or discovering a
+  repeatable authoring friction.
 
 ## Boundaries
 
