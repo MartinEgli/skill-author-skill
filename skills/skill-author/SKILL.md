@@ -118,7 +118,8 @@ agent hosts. Read `references/superrepo-maintenance.md`,
 
 Update an existing skill contract, modes, roles, handoffs, evidence handling,
 diagram scope, references, examples, target-agent compatibility, and metadata.
-Keep the change scoped and traceable.
+Keep the change scoped and traceable. Read `references/diagrams.md` when the
+change adds or alters diagram capability.
 
 ### /skill-author evidence
 
@@ -228,6 +229,7 @@ Before final answer or commit:
   repeatable authoring friction.
 - Use `/skill-author agents` when a skill must support Claude, Cursor,
   Windsurf, Cline, or multiple agent surfaces.
+- Use `references/diagrams.md` when authoring another skill's diagram scope.
 
 ## Boundaries
 
