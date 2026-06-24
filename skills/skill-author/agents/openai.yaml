@@ -1,3 +1,3 @@
 display_name: Skill Author
-short_description: Build, maintain, and improve traceable Codex skills.
-default_prompt: Use skill-author to create or refine a production-ready Codex skill with evidence, validation, Gitflow, AgentSkills catalog updates, and feedback into the authoring workflow.
+short_description: Build and improve traceable skills for Codex and other agents.
+default_prompt: Use skill-author to create or refine a production-ready agent skill for Codex, Claude, Cursor, Windsurf, Cline, or another host with evidence, validation, Gitflow, AgentSkills catalog updates, and feedback into the authoring workflow.
