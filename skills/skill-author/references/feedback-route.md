@@ -1,47 +1,35 @@
 # Feedback Route
 
-Use this reference after creating or refining a skill when the work reveals a
-repeatable improvement for `skill-author`, `single-skill-template`, AgentSkills
-docs, or a target skill.
+Use this file to capture lessons without turning one-off feedback into hidden
+behavior.
 
-## Feedback Classes
+## Loop
 
-- Applied now: small, evidenced improvement that belongs in the current change.
-- Deferred: useful improvement but outside current scope.
-- Rejected: idea conflicts with skill boundaries or would add unnecessary
-  complexity.
-- Routed: belongs to another repo or skill.
+1. Capture feedback from the user, task outcome, tool output, or review.
+2. Classify it as evidence, inference, assumption, gap, rejected, deferred, or
+   routed.
+3. Decide whether the skill, template, examples, references, tests, README, or
+   another skill should change.
+4. Create an improvement proposal before editing behavior.
+5. Validate the change with the repo checks.
+6. Commit on a feature branch and push.
 
-## Feedback Capture
+## Classification
 
-For each item, record:
-
-- observation
-- source evidence
-- affected artifact
-- proposed improvement
-- class
-- action taken or next owner
-
-## Apply Now When
-
-- the issue was encountered during the current skill build
-- the fix is small and general
-- validation remains green
-- the change improves repeatability, evidence, handoffs, metadata, Gitflow, or
-  catalog maintenance
-
-## Do Not Apply Now When
-
-- the issue is specific to one domain skill
-- the change would redesign the template without evidence
-- the change requires user policy decisions
-- the fix would delay the requested skill delivery materially
-
-## Output
-
-Include a short "Skill Author Feedback" section in substantial final summaries:
-
-| Observation | Evidence | Action |
+| Type | Meaning | Action |
 | --- | --- | --- |
-|  |  |  |
+| Evidence | Supported by user input, repo file, tool result, or cited source | May justify a change |
+| Inference | Reasoned conclusion from evidence | Mark reasoning explicitly |
+| Assumption | Useful but not verified | Do not make permanent without validation |
+| Gap | Missing input that may change behavior | Capture as open question or test case |
+| Rejected | Considered but intentionally not applied | Record reason |
+| Deferred | Useful but not in current scope | Put in backlog |
+| Routed | Belongs to another skill or repo | Name the owner |
+
+## Rules
+
+- Do not silently rewrite skill behavior from a single conversation.
+- Do not treat model output as ground truth.
+- Preserve exact user facts, file paths, commands, source labels, and examples.
+- Add or update examples and tests when feedback changes expected behavior.
+- Update changelog or version when the change affects released behavior.
