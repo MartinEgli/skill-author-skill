@@ -168,7 +168,8 @@ needs improvement. Read `references/feedback-route.md`.
 
 ## Evidence Handling
 
-Use `references/evidence-traceability.md` for every substantial skill change.
+Use `references/evidence-traceability.md` for every substantial skill change.
+Use eferences/feedback-route.md when capturing or applying lessons from a run.
 
 Always classify important inputs as:
 
@@ -239,8 +240,15 @@ metadata, or an explicit compatibility note. A skill is good when it has clear
 triggering, bounded scope, useful references, testable behavior, target-agent
 clarity, and traceable outputs.
 
-## Output Style
 
+## Continuous Improvement
+
+This skill is self-improving only through an explicit, auditable feedback loop:
+feedback -> evidence -> improvement proposal -> feature branch -> validation ->
+commit -> push -> version or changelog update when needed. Do not silently alter
+skill behavior based on a single run. Preserve rejected and deferred ideas so
+future maintainers can see why they were not applied.
+## Output Style
 - Lead with changed artifacts, validation status, and any blockers.
 - Use short tables for audits, handoffs, and catalog comparisons.
 - Include exact commands only when they are useful for repeatability.

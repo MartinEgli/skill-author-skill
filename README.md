@@ -31,3 +31,10 @@ Other agents:
 
 Use `skill-author /skill-author agents` to define the target agent, metadata,
 install/import path, and validation evidence before claiming support.
+
+## Continuous Improvement
+
+This skill supports an explicit feedback loop. Use /skill-author feedback to
+capture lessons and /skill-author improve to propose changes. Improvements must
+remain traceable, validated, committed on a feature branch, and pushed before
+they become part of the released skill behavior.
